@@ -65,6 +65,11 @@ a { color: var(--accent); }
 .reading-band--significant { color: var(--alert); }
 .reading-range { font-family: var(--mono); font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.06em; margin-top: 0.25rem; }
 .reading-text { color: var(--text); font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.1rem; }
+.drift-meter { display: flex; align-items: center; gap: 0.9rem; margin: 0.3rem 0 1.5rem; }
+.dm-end { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); white-space: nowrap; }
+.dm-track { flex: 1; height: 2px; position: relative; min-width: 0; }
+.dm-line { position: absolute; left: 0; top: 0; height: 0; border-top: 2px dotted var(--accent); transition: width 0.75s cubic-bezier(0.22, 1, 0.36, 1); }
+@media (prefers-reduced-motion: reduce) { .dm-line { transition: none; } }
 .reading-lowest { color: var(--text-dim); font-size: 0.98rem; line-height: 1.7; margin-bottom: 1.1rem; }
 .reading-lowest strong { color: var(--accent); }
 .reading-after { color: var(--text-dim); font-size: 0.98rem; line-height: 1.75; max-width: 64ch; padding-top: 1.1rem; border-top: 1px solid var(--border); }

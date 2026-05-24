@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { INTRO, QUESTIONS, AFTER, NOTE, bandFor } from './data.js';
 
 function Scale({ value, onChange, name }) {
@@ -36,6 +36,18 @@ export function App() {
     }
     return { name: QUESTIONS[idx].name, score: scores[idx] };
   }, [scores, complete]);
+
+  // Drift as a 0..1 fraction: total 25 means no drift, total 5 means maximum.
+  const driftFrac = complete ? Math.max(0, Math.min(1, (25 - total) / 20)) : 0;
+  const [meterWidth, setMeterWidth] = useState(0);
+  useEffect(() => {
+    if (!complete) {
+      setMeterWidth(0);
+      return undefined;
+    }
+    const id = setTimeout(() => setMeterWidth(driftFrac), 40);
+    return () => clearTimeout(id);
+  }, [complete, driftFrac]);
 
   const set = (i, n) => setScores((prev) => prev.map((v, j) => (j === i ? n : v)));
   const reset = () => {
@@ -78,6 +90,11 @@ export function App() {
               <div className={'reading-band reading-band--' + band.key}>{band.label}</div>
               <div className="reading-range">Score {band.range}</div>
             </div>
+          </div>
+          <div className="drift-meter" aria-hidden="true">
+            <span className="dm-end">Stated</span>
+            <span className="dm-track"><span className="dm-line" style={{ width: Math.round(meterWidth * 100) + '%' }} /></span>
+            <span className="dm-end">Lived</span>
           </div>
           <p className="reading-text">{band.text}</p>
           <p className="reading-lowest">
