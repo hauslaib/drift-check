@@ -1,6 +1,6 @@
 // The five-question Drift Check, verbatim from the companion worksheet and
-// drift-cli (from the front matter and Chapter 9 of *Leading Agile When No One
-// Agrees*). Higher scores mean the Stated and Lived systems are more aligned;
+// drift-cli (from the front matter and Chapter 9 of Leading Agile When No One
+// Agrees). Higher scores mean the Stated and Lived systems are more aligned;
 // the total runs 5 to 25 and the bands match drift-cli exactly.
 
 export const INTRO = {

@@ -28,5 +28,5 @@ jobs:
       - name: Upload single-file build
         uses: actions/upload-artifact@v4
         with:
-          name: driftboard-build
+          name: drift-check-build
           path: dist/index.html
