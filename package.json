@@ -1,0 +1,30 @@
+{
+  "name": "drift-check",
+  "version": "1.0.0",
+  "description": "An interactive, in-browser version of the five-question Drift Check from Leading Agile When No One Agrees. Runs entirely client-side; nothing is stored or sent.",
+  "license": "AGPL-3.0-or-later",
+  "author": "Kyle Hauslaib",
+  "type": "module",
+  "homepage": "https://kylehauslaib.com/demos/",
+  "repository": { "type": "git", "url": "https://github.com/hauslaib/drift-check" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "globals": "^15.0.0",
+    "vite": "^5.3.1",
+    "vite-plugin-singlefile": "^2.0.1"
+  }
+}
