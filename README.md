@@ -1,6 +1,7 @@
 # The Drift Check
 
 [![CI](https://github.com/hauslaib/drift-check/actions/workflows/ci.yml/badge.svg)](https://github.com/hauslaib/drift-check/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20786354.svg)](https://doi.org/10.5281/zenodo.20786354)
 
 A small, client-side interactive version of the five-question Drift Check from
 *Leading Agile When No One Agrees*. Rate five statements about how your
@@ -60,3 +61,12 @@ your answers are held in memory only and never leave the page.
 
 Built by Kyle Hauslaib as a companion to *Leading Agile When No One Agrees*.
 [kylehauslaib.com](https://kylehauslaib.com) · [the Drift framework](https://kylehauslaib.com/the-drift/)
+
+
+## Citation
+
+If you use the Drift Check, please cite the archived release:
+
+> Hauslaib, K. (2026). *Drift Check* (Version 1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.20786354
+
+The DOI above is the concept DOI and always resolves to the latest version. A machine-readable citation is in [`CITATION.cff`](CITATION.cff).
