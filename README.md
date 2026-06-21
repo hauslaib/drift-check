@@ -1,7 +1,7 @@
 # The Drift Check
 
 [![CI](https://github.com/hauslaib/drift-check/actions/workflows/ci.yml/badge.svg)](https://github.com/hauslaib/drift-check/actions/workflows/ci.yml)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20786354.svg)](https://doi.org/10.5281/zenodo.20786354)
+[![DOI](https://zenodo.org/badge/1248201158.svg)](https://doi.org/10.5281/zenodo.20786354)
 
 A small, client-side interactive version of the five-question Drift Check from
 *Leading Agile When No One Agrees*. Rate five statements about how your
