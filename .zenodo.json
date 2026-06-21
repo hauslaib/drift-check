@@ -34,6 +34,11 @@
       "relation": "isDerivedFrom",
       "identifier": "978-3-9828982-0-9",
       "scheme": "isbn"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5281/zenodo.20786651",
+      "scheme": "doi"
     }
   ]
 }
