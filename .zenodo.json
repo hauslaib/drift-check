@@ -1,0 +1,39 @@
+{
+  "title": "Drift Check",
+  "upload_type": "software",
+  "description": "An interactive, client-side version of the five-question Drift Check from the book Leading Agile When No One Agrees by Kyle Hauslaib. It gives a reading of the gap between an organisation's Stated System and its Lived System. The tool runs entirely in the browser; nothing is stored or sent.",
+  "creators": [
+    {
+      "name": "Hauslaib, Kyle",
+      "orcid": "0009-0008-8059-6364"
+    }
+  ],
+  "license": "AGPL-3.0-or-later",
+  "access_right": "open",
+  "keywords": [
+    "organisational drift",
+    "agile leadership",
+    "scaled agile",
+    "self-assessment",
+    "stated system",
+    "lived system",
+    "engineering leadership"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isDocumentedBy",
+      "identifier": "https://kylehauslaib.com/drift/",
+      "scheme": "url"
+    },
+    {
+      "relation": "isVariantFormOf",
+      "identifier": "https://kylehauslaib.com/demos/drift-check.html",
+      "scheme": "url"
+    },
+    {
+      "relation": "isDerivedFrom",
+      "identifier": "978-3-9828982-0-9",
+      "scheme": "isbn"
+    }
+  ]
+}

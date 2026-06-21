@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Drift Check"
+abstract: >-
+  An interactive, client-side version of the five-question Drift Check from the
+  book Leading Agile When No One Agrees by Kyle Hauslaib. It gives a reading of
+  the gap between an organisation's Stated System and its Lived System. The tool
+  runs entirely in the browser; nothing is stored or sent.
+type: software
+authors:
+  - family-names: Hauslaib
+    given-names: Kyle
+    orcid: "https://orcid.org/0009-0008-8059-6364"
+    website: "https://kylehauslaib.com"
+repository-code: "https://github.com/hauslaib/drift-check"
+url: "https://kylehauslaib.com/demos/drift-check.html"
+license: AGPL-3.0-or-later
+version: "1.0.0"
+date-released: "2026-06-21"
+keywords:
+  - organisational drift
+  - agile leadership
+  - scaled agile
+  - self-assessment
+  - stated system
+  - lived system
+  - engineering leadership
